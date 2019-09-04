@@ -161,7 +161,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
     }
     
-    // ========課題追加=========================================================
+    // ========課題追加=========commentボタンがタップされた時の処理===================
     @objc func handleButton2(_ sender: UIButton, forEvent event: UIEvent) {
         print("DEBUG_PRINT: Commentボタンがタップされました。")
         
@@ -178,7 +178,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     // =======================================================================
     
     
-    // ========課題追加==================================================
+    // ========課題追加========commentとcommentNameをFirebaseに保存=========
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         
